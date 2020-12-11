@@ -7,6 +7,7 @@ use serde::{ser, serde_if_integer128};
 use std::{fmt, io, num, str};
 use yaml_rust::{yaml, Yaml, YamlEmitter};
 
+/// A structure for serializing Rust values into YAML
 pub struct Serializer;
 
 impl ser::Serializer for Serializer {
